@@ -32,12 +32,16 @@ function Container({community}) {
 
     const Popup = () => {
         return (popupEnabled ? 
-            <div className="popup">
-                <h2>PopUp Window</h2>
-                <button onClick={() => {setPopupEnabled(false)}} data-bs-toggle="collapse" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close"></button>
+            <div className="popup" id="popup">
+                <button onClick={() => {setPopupEnabled(false)}} data-bs-toggle="collapse" type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvasDark" aria-label="Close" id="close-button"></button>
+                <h1 id="popup-heading">COMMUNITY INFO</h1>
                 <div className="container">
-                    <p>Some Random Text</p>
-                    <button onClick={handleRedirect}>Join</button>
+                    <img src="" id="community-pic"></img>
+                    <p id="community-name">{name}</p>
+                    <p id="community-info">It is a description of the community.
+                    <br></br>Also when it was started
+                    <br></br> and member count <br></br>just checking</p>
+                    <button onClick={handleRedirect} id="join-button">JOIN</button>
                 </div>
             </div>
             : "") 
