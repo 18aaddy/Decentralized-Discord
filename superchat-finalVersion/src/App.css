@@ -1,0 +1,49 @@
+.chat-room {
+    padding-left: 40%;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: rgb(48, 49, 48);
+    border-right: 2px;
+    border-color: black;
+    box-shadow: 3px;
+}
+
+.popup {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(56, 54, 54, 0.7);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.popup .container {
+    display: block;
+    background-color: rgb(30, 30, 30);
+    width: 1fr;
+    height: 20vh;
+    border: 2px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.community-containers {
+    display: inline-block;
+    margin: 10px;
+}
+
+.sent {
+    background-color: green;
+}
+
+.recieved {
+    background-color: red;
+}
