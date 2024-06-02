@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "esnext",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "preserve",
+    "incremental": true,
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "src/app/[roomId]/page.jsx",
+    "src/app/api/room/route.js",
+    "src/app/components/Customize/Additional/Additional.jsx",
+    "src/app/components/Customize/Essentials/Essentials.jsx",
+    "src/app/components/Customize/Essentials/EssentialsIcons.jsx",
+    "src/app/components/Customize/Essentials/Toggle.jsx",
+    "src/app/components/Customize/Inputs/TextInputWithBtn/Button.jsx",
+    "src/app/components/Customize/Inputs/TextInputWithBtn/Select.jsx",
+    "src/app/components/Customize/Inputs/TextInputWithBtn/TextInput.jsx",
+    "src/app/components/Customize/Inputs/TextInputWithBtn/TextInputWithBtn.jsx",
+    "src/app/components/Customize/Inputs/Inputs.jsx",
+    "src/app/components/Customize/Section/Section.jsx",
+    "src/app/components/Customize/Themes/Themes.jsx",
+    "src/app/components/Customize/Themes/Wallets/Checkbox.jsx",
+    "src/app/components/Customize/Themes/Wallets/CheckboxWithName.jsx",
+    "src/app/components/Customize/Themes/Wallets/Wallets.jsx",
+    "src/app/components/Customize/Customize.jsx",
+    "src/app/components/Controls.jsx",
+    "src/app/components/DocBtn.jsx",
+    "src/app/components/HuddleLogo.jsx",
+    "src/app/layout.jsx",
+    "src/app/page.jsx"
+  ],
+  "exclude": ["node_modules"]
+}
