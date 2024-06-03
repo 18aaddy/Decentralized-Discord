@@ -30,13 +30,9 @@
     justify-content: center;
 }
 
-.popup .container {
+.popup #container {
     display: block;
     background-color: rgb(30, 30, 30);
-    width: 1fr;
-    height: 20vh;
-    border: 2px;
-    border-radius: 10px;
     align-self: center;
 }
 
@@ -195,8 +191,8 @@
 
 #close-button{
     position:fixed;
-    top:30;
-    right:0;
+    top:60px;
+    right:10px;
 }
 
 #popup-heading{
@@ -209,11 +205,11 @@
 
 #popup{
     display:grid;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows:  1fr 6fr ;
 }
 
-.container{
-    height:90% ;
+#container{
+    height:90%;
     width:400px;
     border-radius: 15px;
     border: 2px double transparent;
@@ -223,8 +219,8 @@
 }
 
 #community-pic{
-    height: 170px;
-    width:170px;
+    height: 130px;
+    width:130px;
     margin-top:30px;
     margin-left: auto;
     margin-right: auto;
@@ -233,14 +229,28 @@
 }
 
 #community-name{
+    display: block;
     text-align: center;
     font-size: large;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   }
 
-#community-info{
+#community-info-1{
+    display: block;
     text-align: center;
-    font-size: medium;
+    font-size: 17px;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-bottom: 5px;
+}
+
+#community-info-2{
+    display: block;
+    text-align: center;
+    font-size:15px;
+    color:#888;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 #join-button{
