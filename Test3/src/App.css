@@ -1,0 +1,304 @@
+.home-page {
+    padding-bottom: 30px;
+}
+
+.chat-room {
+    padding-left: 40%;
+}
+
+.side-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 20vw;
+    background-color: rgb(48, 49, 48);
+    border-right: 2px;
+    border-color: black;
+    box-shadow: 3px;
+}
+
+.popup {
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    background-color: rgba(56, 54, 54, 0.9);
+    height: 100vh;
+    width: 100vw;
+    justify-content: center;
+}
+
+.popup .container {
+    display: block;
+    background-color: rgb(30, 30, 30);
+    width: 1fr;
+    height: 20vh;
+    border: 2px;
+    border-radius: 10px;
+    align-self: center;
+}
+
+.community-containers {
+    display: inline-block;
+    margin: 10px;
+}
+
+/* .sent {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 5vh;
+}
+
+.received {
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5vh;
+} */
+
+/* Common message style */
+.message {
+    display: flex;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 10px;
+    max-width: 80%;
+    word-wrap: break-word;
+  }
+  
+/* Sent messages */
+.sent {
+    background-color: #dcf8c6;
+    align-self: flex-end;
+    border-bottom-right-radius: 0;
+    text-align: right;
+}
+
+/* Received messages */
+.received {
+    background-color: #fff;
+    align-self: flex-start;
+    border-bottom-left-radius: 0;
+    text-align: left;
+}
+
+/* Message text */
+.message p {
+    margin: 0;
+    font-size: 16px;
+}
+
+/* User profile picture
+.message img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+} */
+
+/* .sent img {
+    margin-left: 10px;
+    margin-right: 0;
+} */
+
+/* Message container */
+.message-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.message .timestamp {
+    font-size: 12px;
+    color: #888;
+    margin-top: 5px;
+    margin-left: 3vw;
+    display: block;
+    text-align: right;
+}
+
+.message p {
+    display: block;
+}
+
+/* Scroll to bottom div */
+.scroll-to-bottom {
+    float: left;
+    clear: both;
+}
+
+@media (prefers-color-scheme: dark) {
+    .chat-room {
+        margin: 0;
+        padding: 0;
+        background-image: url('./img/line_pattern_3_01.jpg');
+        background-repeat: repeat; /* This repeats the background image both horizontally and vertically */
+        background-size: auto; /* The background image maintains its original size */
+    }
+    
+    .message {
+        color: #232323;
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    .chat-room {
+        margin: 0;
+        padding: 0;
+        background-image: url('./img/3431462.jpg');
+        background-repeat: repeat; /* This repeats the background image both horizontally and vertically */
+        background-size: auto; /* The background image maintains its original size */
+    }
+}
+
+
+.sidebar {
+    min-width: 240px;
+    height: 100vh;
+    background-color: #212529; /* Slightly lighter than the body background */
+    padding-top: 2px;
+}
+  
+.sidebar a {
+    color: #b9bbbe; /* Light grey color for the channel names */
+    font-size: 14px;
+    text-decoration: none; /* Remove underline from anchor tags */
+    display: block; /* Ensure the anchor tags take up the full width */
+  }
+  
+.sidebar a::before {
+    content: "# ";
+    color: #72767d; /* Darker grey for the hash symbol */
+}
+
+.channel {
+    padding: 8px 16px;
+    margin: 4px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+  
+.channel:hover {
+    background-color: #35373c; /* Hover effect for the channels */
+}
+  
+.channel-name {
+    color: #b9bbbe; /* Light grey color for the channel names */
+    font-size: 14px;
+}
+  
+  
+.channel.active {
+    background-color: #33363b; /* Slightly different color for the active channel */
+}
+  
+
+#close-button{
+    position:fixed;
+    top:30;
+    right:0;
+}
+
+#popup-heading{
+    text-align: center;
+    padding-top: 20%;
+    font-weight: 800;
+    font-size:xx-large;
+    color:beige;
+}
+
+#popup{
+    display:grid;
+    grid-template-rows: 1fr 6fr;
+}
+
+.container{
+    height:90% ;
+    width:400px;
+    border-radius: 15px;
+    border: 2px double transparent;
+    background-image: linear-gradient(rgb(13, 14, 33), rgb(13, 14, 33)), radial-gradient(circle at left top, rgb(1, 110, 218), rgb(217, 0, 192));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+#community-pic{
+    height: 170px;
+    width:170px;
+    margin-top:30px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 30px;
+}
+
+#community-name{
+    text-align: center;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+#community-info{
+    text-align: center;
+    font-size: medium;
+}
+
+#join-button{
+   width: 30%;
+   margin-left:35% ;
+   margin-right: auto;
+   margin-bottom: 30px;
+   background-color: rgb(13, 14, 33);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   border-radius: 13px;
+   position: relative;
+   z-index: 0;
+   border: 2px transparent;
+}
+
+#join-button:before {
+  content: '';
+  background: linear-gradient(45deg, #002bff, #7a00ff, #ff00c8, #7a00ff,#002bff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(5px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 10s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 10px;
+}
+
+#join-button:active {
+  color: #000
+}
+
+#join-button:active:after {
+  background: transparent;
+}
+
+#join-button:hover:before {
+  opacity: 1;
+}
+
+#join-button:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background:inherit;
+  left: 0;
+  top: 0;
+  border-radius: 10px;
+} 
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+  }
